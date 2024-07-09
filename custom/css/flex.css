@@ -1,34 +1,35 @@
-header{
+header {
     display: flex;
     justify-content: space-around;
 }
 
-.logos-sociaux{
+.logos-sociaux {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.articles-chaussures{
+.articles-chaussures {
     display: flex;
     flex-wrap: wrap;
 }
 
-.chaussure{
+.chaussure {
     display: flex;
     position: relative;
     aspect-ratio: 1/1;
     flex: 1 1 calc(33.33% - 10px);
 }
 
-.prix, .jordan{
+.prix,
+.jordan {
     position: absolute;
     z-index: 2;
 }
 
-.jordan{
-   top: 3%;
-   left: 35%;
+.jordan {
+    top: 3%;
+    left: 35%;
 }
 
 
@@ -36,7 +37,7 @@ header{
     z-index: 1;
 }
 
-.flextool{
+.flextool {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,10 +49,29 @@ footer {
     flex-direction: row;
 }
 
-.logo-nike{
+.logo-nike {
     flex: 1;
 }
 
-.slogan{
+.slogan {
     flex: 2;
 }
+
+/*Affichage téléphone*/
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+    }
+
+    .logos-sociaux {
+        justify-content: space-evenly;
+    }
+
+
+}
+
+/*Affichage tablette*/
+@media screen and (min-width: 769px) and (max-width:1024px) {}
+
+/*Affichage pc : nécessaire ?*/
+@media screen and (max-width: 1025px) {}

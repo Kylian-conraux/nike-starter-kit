@@ -6,7 +6,7 @@
 
 }
 
-body{
+body {
   width: 100%;
   height: 100%;
   padding: 0px;
@@ -42,7 +42,7 @@ header svg {
 
 }
 
-.background{
+.background {
   width: 100%;
   height: 400px;
   background-image: url('/images/wall.jpg');
@@ -57,27 +57,30 @@ p {
   font-weight: bold;
 }
 
-.prix, .jordan{
+.prix,
+.jordan {
   background-color: var(--main-color-2);
 }
 
-.prix{
+.prix {
   border-radius: 50%;
   width: 75px;
   height: 75px;
   transform: rotate(-15deg);
 }
 
-.jordan{
+.jordan {
   height: 35px;
   transform: rotate(15deg);
 }
 
-.prix, .jordan{
+.prix,
+.jordan {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.2);
+  margin: 5px;
 }
 
-.prix p{
+.prix p {
   margin: 0;
 }
 
@@ -98,15 +101,39 @@ p {
 
 }
 
-.logo-nike{
+.logo-nike {
   background-color: var(--main-color-2);
 }
 
-.logo-nike .couleur-logo{
+.logo-nike .couleur-logo {
   fill: var(--main-color-1);
 }
 
-.slogan{
+.slogan {
   background-color: var(--main-color-1);
   color: var(--main-color-2);
+}
+
+@media screen and (max-width: 768px) {
+  .logos-sociaux {
+    background-color: var(--main-color-2);
+  }
+
+  .logos-sociaux svg {
+    color: var(--main-color-1);
+  }
+
+  #accueil {
+    background-color: var(--main-color-2);
+  }
+
+  /*Affichage tablette*/
+@media screen and (min-width: 769px) and (max-width:1024px){
+
+}
+
+/*Affichage pc : nécessaire ?*/
+@media screen and (max-width: 1025px){
+    
+}
 }
