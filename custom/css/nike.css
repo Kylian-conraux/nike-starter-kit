@@ -89,6 +89,7 @@ p {
 .chaussure img {
   width: 100%;
   filter: grayscale(100%);
+  transition: 0.5s;
 }
 
 .chaussure img:hover {
