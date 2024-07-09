@@ -8,5 +8,23 @@
  
 
 .couleur-logo {
-    fill: var(--main-color-1);
+    fill: var(--main-color-3);
+}
+
+header{
+  background-color: var(--main-color-1);
+}
+
+header svg{
+  color: var(--main-color-3);
+}
+
+#accueil{
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.logos-sociaux svg{
+  padding: 5px;
 }
