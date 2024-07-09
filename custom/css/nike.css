@@ -63,6 +63,7 @@ p {
 
 .prix{
   border-radius: 50%;
+  width: 75px;
   height: 75px;
   transform: rotate(-15deg);
 }
@@ -74,7 +75,6 @@ p {
 
 .prix, .jordan{
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.2);
-  width: 25%;
 }
 
 .prix p{
