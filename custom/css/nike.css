@@ -127,13 +127,30 @@ p {
     background-color: var(--main-color-2);
   }
 
-  /*Affichage tablette*/
-@media screen and (min-width: 769px) and (max-width:1024px){
-
+  .couleur-logo {
+    fill: var(--main-color-2);
+  }
 }
+
+/*Affichage tablette*/
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  .logos-sociaux {
+    background-color: var(--main-color-2);
+  }
+
+  .logos-sociaux svg {
+    color: var(--main-color-1);
+  }
+
+  #accueil {
+    background-color: var(--main-color-2);
+  }
+
+  .couleur-logo {
+    fill: var(--main-color-2);
+  }
+}
+
 
 /*Affichage pc : nécessaire ?*/
-@media screen and (max-width: 1025px){
-    
-}
-}
+@media screen and (max-width: 1025px) {}
