@@ -1,30 +1,98 @@
 :root {
-    --main-color-1: black;
-    --main-color-2: yellow;
-    --main-color-3: white;
-    --main-color-4: gray;
+  --main-color-1: black;
+  --main-color-2: yellow;
+  --main-color-3: white;
+  --main-color-4: gray;
 
-  }
- 
-
-.couleur-logo {
-    fill: var(--main-color-3);
 }
 
-header{
+body{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.couleur-logo {
+  fill: var(--main-color-3);
+}
+
+header {
   background-color: var(--main-color-1);
 }
 
-header svg{
+header svg {
   color: var(--main-color-3);
 }
 
-#accueil{
+#accueil {
   border-radius: 5px;
   background-color: white;
   color: black;
 }
 
-.logos-sociaux svg{
+.logos-sociaux svg {
   padding: 5px;
+}
+
+.solde {
+  background-color: var(--main-color-2);
+  margin: 0px;
+  height: 50px;
+
+}
+
+.background{
+  width: 100%;
+  height: 400px;
+  background-image: url('/images/wall.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+p {
+  color: var(--main-color-1);
+  text-align: center;
+  font-weight: bold;
+}
+
+.prix, .jordan{
+  background-color: var(--main-color-2);
+}
+
+.prix{
+  border-radius: 50%;
+  height: 75px;
+  transform: rotate(-15deg);
+}
+
+.jordan{
+  height: 35px;
+  transform: rotate(15deg);
+}
+
+.prix, .jordan{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.2);
+  width: 25%;
+}
+
+.prix p{
+  margin: 0;
+}
+
+.chaussure {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.chaussure img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.chaussure img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.2);
+
 }

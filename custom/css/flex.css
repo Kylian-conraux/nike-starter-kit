@@ -9,3 +9,36 @@ header{
     justify-content: center;
 }
 
+.articles-chaussures{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chaussure{
+    display: flex;
+    position: relative;
+    aspect-ratio: 1/1;
+    flex: 1 1 calc(33.33% - 10px);
+}
+
+.prix, .jordan{
+    position: absolute;
+    z-index: 2;
+}
+
+.jordan{
+   top: 3%;
+   left: 35%;
+}
+
+
+.chaussure img {
+    z-index: 1;
+}
+
+.flextool{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
