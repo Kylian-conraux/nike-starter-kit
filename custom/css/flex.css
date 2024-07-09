@@ -42,3 +42,16 @@ header{
     justify-content: center;
     padding: 5px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-nike{
+    flex: 1;
+}
+
+.slogan{
+    flex: 2;
+}

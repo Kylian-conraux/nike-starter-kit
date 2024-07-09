@@ -87,7 +87,7 @@ p {
 }
 
 .chaussure img {
-  width: 100%;
+  width: 90%;
   filter: grayscale(100%);
   transition: 0.5s;
 }
@@ -96,4 +96,17 @@ p {
   filter: grayscale(0%);
   transform: scale(1.2);
 
+}
+
+.logo-nike{
+  background-color: var(--main-color-2);
+}
+
+.logo-nike .couleur-logo{
+  fill: var(--main-color-1);
+}
+
+.slogan{
+  background-color: var(--main-color-1);
+  color: var(--main-color-2);
 }
