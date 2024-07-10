@@ -9,16 +9,10 @@ header {
     justify-content: center;
 }
 
-.articles-chaussures {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .chaussure {
     display: flex;
     position: relative;
     aspect-ratio: 1/1;
-    flex: 1 1 calc(33.33% - 10px);
 }
 
 .prix,
@@ -31,7 +25,6 @@ header {
     top: 3%;
     left: 35%;
 }
-
 
 .chaussure img {
     z-index: 1;
@@ -67,6 +60,9 @@ footer {
         justify-content: space-evenly;
     }
 
+    .chaussure{
+        flex: 1;
+    }
 
 }
 
@@ -79,7 +75,26 @@ footer {
     .logos-sociaux {
         justify-content: space-evenly;
     }
+
+    .articles-chaussures {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .chaussure {
+        flex: 1 1 calc(50% - 10px);
+    }
 }
 
-/*Affichage pc : nécessaire ?*/
-@media screen and (max-width: 1025px) {}
+/*Affichage pc :*/
+@media screen and (min-width: 1025px) {
+    
+    .articles-chaussures {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .chaussure {
+        flex: 1 1 calc(33.33% - 10px);
+    }
+}

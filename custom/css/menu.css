@@ -69,8 +69,6 @@ nav ul {
     margin: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: relative;
 }
 
@@ -87,7 +85,8 @@ nav a {
     line-height: 60px;
     background-color: black;
     border-radius: 5px;
-    white-space: nowrap;/*évite les retour à la ligne*/
+    white-space: nowrap;
+    /*évite les retour à la ligne*/
 }
 
 nav a:hover {
@@ -110,6 +109,23 @@ nav ul ul li {
     width: 100%;
 }
 
-.logos-sociaux a svg:hover {
-    color: yellow;
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    nav ul {
+        justify-content: space-between;
+    }
+    
 }

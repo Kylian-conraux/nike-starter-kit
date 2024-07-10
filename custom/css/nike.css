@@ -21,10 +21,6 @@ header {
   background-color: var(--main-color-1);
 }
 
-header svg {
-  color: var(--main-color-3);
-}
-
 #accueil {
   border-radius: 5px;
   background-color: white;
@@ -123,12 +119,20 @@ p {
     color: var(--main-color-1);
   }
 
+  .logos-sociaux svg:hover {
+    color: var(--main-color-3);
+  }
+
   #accueil {
     background-color: var(--main-color-2);
   }
 
   .couleur-logo {
     fill: var(--main-color-2);
+  }
+
+  .background {
+    display: none;
   }
 }
 
@@ -142,6 +146,10 @@ p {
     color: var(--main-color-1);
   }
 
+  .logos-sociaux svg:hover {
+    color: var(--main-color-3);
+  }
+
   #accueil {
     background-color: var(--main-color-2);
   }
@@ -149,8 +157,20 @@ p {
   .couleur-logo {
     fill: var(--main-color-2);
   }
+
+  .background {
+    display: none;
+  }
 }
 
 
 /*Affichage pc : nécessaire ?*/
-@media screen and (max-width: 1025px) {}
+@media screen and (min-width: 1025px) {
+  .logos-sociaux a svg {
+    color: var(--main-color-3);
+  }
+
+  .logos-sociaux a svg:hover {
+    color: var(--main-color-2);
+  }
+}
