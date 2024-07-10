@@ -1,3 +1,5 @@
+/*
+
 .menu {
     margin: 10px;
 }
@@ -47,6 +49,65 @@ nav ul ul li {
     float: none;
     display: list-item;
     position: relative;
+}
+
+.logos-sociaux a svg:hover {
+    color: yellow;
+}
+    */
+
+.menu {
+    margin: 10px;
+}
+
+nav {
+    margin: 50px 0;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 60px;
+    background-color: black;
+    border-radius: 5px;
+    white-space: nowrap;/*évite les retour à la ligne*/
+}
+
+nav a:hover {
+    background-color: grey;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+}
+
+nav ul li:hover>ul {
+    display: flex;
+}
+
+nav ul ul li {
+    width: 100%;
 }
 
 .logos-sociaux a svg:hover {
